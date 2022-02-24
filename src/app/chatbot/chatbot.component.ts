@@ -13,8 +13,8 @@ export class ChatbotComponent implements OnInit {
   messages = [];
   loading = false;
 
-  // Random ID to maintain session with server
-  private subject = webSocket('ws://localhost:8080/push');
+  // Random ID to maintain session with server http://ztyco01dxw00.globant.com/
+  private subject = webSocket('ws://ztyco01dxw00.globant.com:8080/push');
 
   ngOnInit(): void {
     this.subject.next('initial'); // <- ping first message
